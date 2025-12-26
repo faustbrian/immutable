@@ -1,0 +1,73 @@
+{
+    "name": "cline/immutable",
+    "description": "Immutable object mutation utilities for PHP - create modified copies without changing originals",
+    "license": "MIT",
+    "keywords": [
+        "php",
+        "immutable",
+        "mutation",
+        "clone",
+        "laravel"
+    ],
+    "authors": [
+        {
+            "name": "Brian Faust",
+            "email": "brian@cline.sh"
+        }
+    ],
+    "require": {
+        "php": "^8.5.0",
+        "illuminate/support": "^12.0",
+        "spatie/laravel-package-tools": "^1.91"
+    },
+    "require-dev": {
+        "cline/coding-standard": "^1.5.6",
+        "orchestra/testbench": "^10.8",
+        "symfony/var-dumper": "^7.4.0"
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true,
+    "autoload": {
+        "psr-4": {
+            "Cline\\Immutable\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "config": {
+        "allow-plugins": {
+            "dealerdirect/phpcodesniffer-composer-installer": true,
+            "ergebnis/composer-normalize": true,
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Cline\\Immutable\\ImmutableServiceProvider"
+            ],
+            "aliases": {
+                "Mutator": "Cline\\Immutable\\Facades\\Mutator"
+            }
+        }
+    },
+    "scripts": {
+        "lint": "vendor/bin/ecs check --fix",
+        "refactor": "rector",
+        "test": [
+            "@test:lint",
+            "@test:type-coverage",
+            "@test:unit",
+            "@test:types",
+            "@test:refactor"
+        ],
+        "test:lint": "vendor/bin/ecs check",
+        "test:refactor": "rector --dry-run",
+        "test:type-coverage": "pest --parallel --min=100 --type-coverage",
+        "test:types": "phpstan",
+        "test:unit": "pest --parallel --min=100 --coverage"
+    }
+}
