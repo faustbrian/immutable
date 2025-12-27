@@ -1,8 +1,3 @@
----
-title: Exceptions
-description: Understanding error handling in the Immutable package
----
-
 ## Exception Hierarchy
 
 All exceptions extend from `ImmutableException`, which itself extends PHP's `RuntimeException`:

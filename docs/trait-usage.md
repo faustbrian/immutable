@@ -1,8 +1,3 @@
----
-title: Trait Usage
-description: Using the Immutable trait for clean, type-safe object mutations
----
-
 ## Overview
 
 The `Immutable` trait provides a `mutate()` method that creates modified copies of your objects while keeping the originals unchanged. This is the recommended approach when you control the class definition.

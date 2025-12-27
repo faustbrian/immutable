@@ -1,8 +1,3 @@
----
-title: Getting Started
-description: Immutable object mutation utilities for PHP - create modified copies without changing originals
----
-
 ## Installation
 
 Install via Composer:

@@ -1,8 +1,3 @@
----
-title: Static Mutations
-description: Using the Mutator class for arrays and any object type
----
-
 ## Overview
 
 The `Mutator` class provides static methods to create modified copies of any object or array. Use it when working with third-party classes, `stdClass`, or when you need a standalone mutation utility.
