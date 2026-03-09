@@ -1,9 +1,11 @@
 ## Table of Contents
 
-1. Overview (`docs/README.md`)
-2. Exceptions (`docs/exceptions.md`)
-3. Static Mutations (`docs/static-mutations.md`)
-4. Trait Usage (`docs/trait-usage.md`)
+1. [Overview](#doc-docs-readme) (`docs/README.md`)
+2. [Exceptions](#doc-docs-exceptions) (`docs/exceptions.md`)
+3. [Static Mutations](#doc-docs-static-mutations) (`docs/static-mutations.md`)
+4. [Trait Usage](#doc-docs-trait-usage) (`docs/trait-usage.md`)
+<a id="doc-docs-readme"></a>
+
 ## Installation
 
 Install via Composer:
@@ -118,6 +120,8 @@ $user->mutate(['nonexistent' => 'value']);
 - **[Trait Usage](trait-usage)** - Detailed guide to using the Immutable trait
 - **[Static Mutations](static-mutations)** - Using the Mutator class for arrays and objects
 - **[Exceptions](exceptions)** - Understanding error handling
+
+<a id="doc-docs-exceptions"></a>
 
 ## Exception Hierarchy
 
@@ -347,6 +351,8 @@ try {
     throw $e;
 }
 ```
+
+<a id="doc-docs-static-mutations"></a>
 
 ## Overview
 
@@ -610,6 +616,8 @@ $updated = Mutator::for($user)
     ->with(['age' => 31])
     ->get();
 ```
+
+<a id="doc-docs-trait-usage"></a>
 
 ## Overview
 
