@@ -1,9 +1,9 @@
 ## Table of Contents
 
-1. [Overview](#doc-docs-readme) (`docs/README.md`)
-2. [Exceptions](#doc-docs-exceptions) (`docs/exceptions.md`)
-3. [Static Mutations](#doc-docs-static-mutations) (`docs/static-mutations.md`)
-4. [Trait Usage](#doc-docs-trait-usage) (`docs/trait-usage.md`)
+1. [Overview](#doc-docs-readme)
+2. [Exceptions](#doc-docs-exceptions)
+3. [Static Mutations](#doc-docs-static-mutations)
+4. [Trait Usage](#doc-docs-trait-usage)
 <a id="doc-docs-readme"></a>
 
 ## Installation
